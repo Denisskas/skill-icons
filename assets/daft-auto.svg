@@ -8,10 +8,6 @@
     }
 }  
 </style>
-<path d="m0 0h256v256h-256z"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
 <g clip-path="url(#a)">
 <g mask="url(#b)">
 <g mask="url(#c)">

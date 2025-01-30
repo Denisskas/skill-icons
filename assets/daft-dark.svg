@@ -1,8 +1,4 @@
 <svg fill="none" height="256" viewBox="0 0 256 256" width="256" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<path d="m0 0h256v256h-256z"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
-<path d="m256 0h-256v256h256z" fill="#fff"/>
 <g clip-path="url(#a)">
 <g mask="url(#b)">
 <g mask="url(#c)">
