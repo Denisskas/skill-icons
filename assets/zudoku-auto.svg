@@ -2,9 +2,11 @@
 <style>
 #zudoku {
     rect {fill: #242938}
+    path {fill: #F4F4F4}
     
     @media (prefers-color-scheme: light) {
         rect {fill: #F4F2ED}
+        path {fill: #131313}
     }
 }
 </style>
