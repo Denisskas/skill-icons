@@ -2,15 +2,9 @@
 <style>
 #pnpm {
     path {fill: #242938}
-    rect {fill: #242938}
-    rect {fill: #F9AD00}
-    rect {fill: #4E4E4E}
 
     @media (prefers-color-scheme: light) {
         path {fill: #F4F2ED}
-        rect {fill: #F4F2ED}
-        rect {fill: #F9AD00}
-        rect {fill: #4E4E4E}
     }
 }
 </style>
@@ -23,7 +17,6 @@
 <rect x="160" y="161" width="55" height="55" fill="#4E4E4E"/>
 <rect x="100" y="161" width="55" height="55" fill="#4E4E4E"/>
 <rect x="40" y="161" width="55" height="55" fill="#4E4E4E"/>
-<rect x="40" y="101" width="55" height="55" fill="#242938"/>
 <rect x="100" y="101" width="55" height="55" fill="#4E4E4E"/>
 </g>
 <defs>
