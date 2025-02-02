@@ -4,7 +4,7 @@
     rect {fill: #242938}
 
     @media (prefers-color-scheme: light) {
-        path {fill: #F4F2ED}
+        rect {fill: #F4F2ED}
     }
 }
 </style>
