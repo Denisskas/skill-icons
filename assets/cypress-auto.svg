@@ -1,6 +1,7 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" id="cypress">
 <style>
 #cypress {
+    
     @media (prefers-color-scheme: light) {
         g[clip-path="url(#clip0_36_1190)"] > path:nth-child(1) {fill: #F4F2ED}
         #lighticon-text {fill: #1B1E2E}
@@ -32,8 +33,6 @@
 <stop offset="0.1638" stop-color="#1CA379"/>
 <stop offset="0.3161" stop-color="#1C8568"/>
 <stop offset="0.5165" stop-color="#1B554D"/>
-
-<stop offset="0.7187"  id="lighticon-text" />    
+<stop offset="0.7187" stop-color="#1B554D" />    
 </linearGradient>
-
 </svg>
