@@ -55,10 +55,10 @@ You can specify how many icons you would like per line! It's an optional argumen
 Change the `&perline=3` to any number between 1 and 50.
 
 ```md
-![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vuejs,flutter&perline=3)
 ```
 
-![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vuejs,flutter&perline=3)
 
 # Get Icons Names
 
