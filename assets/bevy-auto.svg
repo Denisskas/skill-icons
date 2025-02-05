@@ -2,7 +2,7 @@
 <style>
 #bevy {
     #bg-darkicon {fill: #242938}
-    #darkicon {fill: none}
+    #darkicon {fill: #242938}
 
     @media (prefers-color-scheme: light) {
         #bg-lighticon {fill: #F4F2ED}
