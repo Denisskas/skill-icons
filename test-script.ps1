@@ -1,5 +1,4 @@
-﻿# Получаем список иконок
-$allSvgFiles = Get-ChildItem -Path ".\assets" -Filter "*.svg"
+﻿$allSvgFiles = Get-ChildItem -Path ".\assets" -Filter "*.svg"
 $icons = $allSvgFiles | 
     Where-Object { $_.Name -notmatch "-light\.svg$" -and $_.Name -notmatch "-dark\.svg$" } |
     Select-Object -ExpandProperty Name |
@@ -8,11 +7,15 @@ $icons = $allSvgFiles |
 $iconsCount = $icons.Count
 Write-Host "Found $iconsCount valid icons"
 
-# Вычисляем количество колонок
+
 $columns = [math]::Ceiling($iconsCount / 100)
 Write-Host "Creating table with $columns columns"
 
-# Создаем начальный контент README
+$codeBlock="``````"
+$codeBlockmd="``````md"
+$codeBlockhtml="``````html"
+
+
 $initialContent = @"
 <p align="center"><img align="center" width="280" src="./.github/text-logo.svg#gh-dark-mode-only"/></p>
 <p align="center"><img align="center" width="280" src="./.github/text-logo-light.svg#gh-light-mode-only"/></p>
@@ -42,9 +45,9 @@ Copy and paste the code block below into your readme to add the skills icon elem
 
 Change the `?i=js,html,css` to a list of your skills separated by ","s! You can find a full list of icons [here](#icons-list).
 
-```md
+$codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=js,html,css,wasm)
-```
+$codeBlock
 
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=js,html,css,wasm)
 
@@ -58,9 +61,9 @@ Change the `&theme=light` to either `dark` or `light`. The theme is the backgrou
 
 **Light Theme Example:**
 
-```md
+$codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=java,kotlin,nodejs,figma&theme=light)
-```
+$codeBlock
 
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=java,kotlin,nodejs&theme=light)
 
@@ -70,9 +73,9 @@ You can specify how many icons you would like per line! It's an optional argumen
 
 Change the `&perline=3` to any number between 1 and 50.
 
-```md
+$codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
-```
+$codeBlock
 
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
 
@@ -82,9 +85,9 @@ You can get the possiblity to add the name of the icons you put to help others t
 
 The value of `titles` is a boolean, so it should be `true` or `false`, default is `false`
 
-```md
+$codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=rust,surrealdb,actix,yew&titles=true)
-```
+$codeBlock
 
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=rust,surrealdb,actix,yew&titles=true)
 
@@ -92,7 +95,7 @@ The value of `titles` is a boolean, so it should be `true` or `false`, default i
 
 Want to center the icons in your readme? The SVGs are automatically resized, so you can do it the same way you'd normally center an image.
 
-```html
+$codeBlockhtml
 <p align="center">
   <a href="https://go-skill-icons.vercel.app/">
     <img
@@ -100,7 +103,7 @@ Want to center the icons in your readme? The SVGs are automatically resized, so 
     />
   </a>
 </p>
-```
+$codeBlock
 
 <p align="center">
   <a href="https://go-skill-icons.vercel.app/">
@@ -110,7 +113,7 @@ Want to center the icons in your readme? The SVGs are automatically resized, so 
 
 "@
 
-# Создаем заголовок таблицы
+
 $headerRow = ""
 $separatorRow = ""
 for ($i = 0; $i -lt $columns; $i++) {
@@ -120,7 +123,6 @@ for ($i = 0; $i -lt $columns; $i++) {
 $headerRow += "|"
 $separatorRow += "|"
 
-# Создаем содержимое таблицы
 $tableContent = @"
 # Icons List
 
@@ -129,7 +131,6 @@ $separatorRow
 
 "@
 
-# Заполняем таблицу построчно
 for ($row = 0; $row -lt 100; $row++) {
     $rowContent = ""
     $hasContent = $false
@@ -154,7 +155,7 @@ for ($row = 0; $row -lt 100; $row++) {
     }
 }
 
-# Добавляем секцию поддержки
+
 $tableContent += @"
 
 # 💖 Support the Project
@@ -162,10 +163,10 @@ Thank you so much already for using my projects!
 To support the project directly, feel free to open issues for icon suggestions, or contribute with a pull request!
 "@
 
-# Объединяем весь контент
+
 $finalContent = $initialContent + "`n`n" + $tableContent
 
-# Сохраняем результат
+
 $finalContent | Set-Content -Path "README.md" -Encoding UTF8
 
 Write-Host "README.md has been updated successfully!"
