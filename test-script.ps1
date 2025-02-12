@@ -140,7 +140,8 @@ for ($row = 0; $row -lt 100; $row++) {
         if ($index -lt $iconsCount) {
             $icon = $icons[$index]
             $iconId = $icon -replace '\.svg$' -replace '-auto'
-            $rowContent += "|          $iconId           |        <img src=`"./assets/$icon`" width=`"48`">         "
+      
+            $rowContent += "|          ``$iconId``           |        <img src=`"./assets/$icon`" width=`"48`">         "
             $hasContent = $true
         } else {
             if ($col -lt ($columns - 1)) {
@@ -154,7 +155,6 @@ for ($row = 0; $row -lt 100; $row++) {
         $tableContent += "$rowContent`n"
     }
 }
-
 
 $tableContent += @"
 
