@@ -43,7 +43,7 @@ $initialContent = @"
 
 Copy and paste the code block below into your readme to add the skills icon element!
 
-Change the `?i=js,html,css` to a list of your skills separated by ","s! You can find a full list of icons [here](#icons-list).
+Change the ``?i=js,html,css`` to a list of your skills separated by ","s! You can find a full list of icons [here](#icons-list).
 
 $codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=js,html,css,wasm)
@@ -57,7 +57,7 @@ Some icons have a dark and light themed background. You can specify which theme 
 
 This is optional. The default theme is dark.
 
-Change the `&theme=light` to either `dark` or `light`. The theme is the background color, so light theme has a white icon background, and dark has a black-ish.
+Change the ``&theme=light`` to either ``dark`` or ``light``. The theme is the background color, so light theme has a white icon background, and dark has a black-ish.
 
 **Light Theme Example:**
 
@@ -71,7 +71,7 @@ $codeBlock
 
 You can specify how many icons you would like per line! It's an optional argument, and the default is 15.
 
-Change the `&perline=3` to any number between 1 and 50.
+Change the ``&perline=3`` to any number between 1 and 50.
 
 $codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
@@ -81,9 +81,9 @@ $codeBlock
 
 # Get Icons Names
 
-You can get the possiblity to add the name of the icons you put to help others that doesnt know what they are by using `&titles`.
+You can get the possiblity to add the name of the icons you put to help others that doesnt know what they are by using ``&titles``.
 
-The value of `titles` is a boolean, so it should be `true` or `false`, default is `false`
+The value of ``titles`` is a boolean, so it should be ``true`` or ``false``, default is ``false``
 
 $codeBlockmd
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=rust,surrealdb,actix,yew&titles=true)
