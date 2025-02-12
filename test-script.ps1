@@ -117,8 +117,8 @@ $codeBlock
 $headerRow = ""
 $separatorRow = ""
 for ($i = 0; $i -lt $columns; $i++) {
-    $headerRow += "| Icon ID | Icon "
-    $separatorRow += "| :-----------------: | :--------------: "
+    $headerRow += "|          Icon ID           |        Icon         "
+    $separatorRow += "| :-----------------------: | :------------------: "
 }
 $headerRow += "|"
 $separatorRow += "|"
@@ -140,11 +140,11 @@ for ($row = 0; $row -lt 100; $row++) {
         if ($index -lt $iconsCount) {
             $icon = $icons[$index]
             $iconId = $icon -replace '\.svg$' -replace '-auto'
-            $rowContent += "| ``$iconId`` | <img src=`"./assets/$icon`" width=`"48`"> "
+            $rowContent += "|          $iconId           |        <img src=`"./assets/$icon`" width=`"48`">         "
             $hasContent = $true
         } else {
             if ($col -lt ($columns - 1)) {
-                $rowContent += "| | "
+                $rowContent += "|                            |                                                        "
             }
         }
     }
@@ -165,8 +165,6 @@ To support the project directly, feel free to open issues for icon suggestions, 
 
 
 $finalContent = $initialContent + "`n`n" + $tableContent
-
-
 $finalContent | Set-Content -Path "README.md" -Encoding UTF8
 
 Write-Host "README.md has been updated successfully!"
