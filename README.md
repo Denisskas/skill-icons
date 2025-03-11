@@ -24,7 +24,7 @@
 
 Copy and paste the code block below into your readme to add the skills icon element!
 
-Change the `?i=js,html,css` to a list of your skills separated by ","s! You can find a full list of icons [here](#icons-list).
+Change the `?i=js,html,css,wasm` to a list of your skills separated by ","s! You can find a full list of icons [here](#icons-list).
 
 ```md
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=js,html,css,wasm)
@@ -46,7 +46,7 @@ Change the `&theme=light` to either `dark` or `light`. The theme is the backgrou
 ![My Skills](https://go-skill-icons.vercel.app/api/icons?i=java,kotlin,nodejs,figma&theme=light)
 ```
 
-![My Skills](https://go-skill-icons.vercel.app/api/icons?i=java,kotlin,nodejs&theme=light)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=java,kotlin,nodejs,figma&theme=light)
 
 # Icons Per Line
 
@@ -55,10 +55,10 @@ You can specify how many icons you would like per line! It's an optional argumen
 Change the `&perline=3` to any number between 1 and 50.
 
 ```md
-![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vuejs,flutter&perline=3)
 ```
 
-![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vue,flutter&perline=3)
+![My Skills](https://go-skill-icons.vercel.app/api/icons?i=aws,gcp,azure,react,vuejs,flutter&perline=3)
 
 # Get Icons Names
 
