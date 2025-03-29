@@ -94,6 +94,9 @@ Want to center the icons in your readme? The SVGs are automatically resized, so 
 
 
 # Icons List
+
+Here's a list of all the icons currently supported. Feel free to open an issue to suggest icons to add!
+
 | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon | Icon ID | Icon |
 | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: | :-----------------: | :--------------: |
 |           `ableton`            |       <img src="./assets/ableton-auto.svg" width="48">       |       `cloudformation`       |      <img src="./assets/cloudformation.svg" width="48">      |            `figma`             |        <img src="./assets/figma-auto.svg" width="48">        |          `insomnia`          |         <img src="./assets/insomnia.svg" width="48">         |            `ngrok`             |          <img src="./assets/ngrok.svg" width="48">           |           `quarkus`            |       <img src="./assets/quarkus-auto.svg" width="48">       |           `symfony`            |       <img src="./assets/symfony-auto.svg" width="48">       |
